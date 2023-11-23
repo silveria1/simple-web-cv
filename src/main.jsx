@@ -27,10 +27,12 @@ const router = createBrowserRouter([
       {
         path: "skill", // http://localhost:5173/skill
         element: <Skill />
-      }
+      },
     ]
   },
-])
+],
+{basename: import.meta.env.DEV ? "/" : "/catalog-product-with-router/"}
+)
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
